@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <script>
+      // let numberOfSections = Math.ceil(Math.random() * 10);
+      // const panels = document.getElementById("panels");
+      // const panelsAbove = document.getElementById("panels-above");
+      // for (let i = 0; i < numberOfSections; i++) {
+      //   const panel = document.createElement('div')
+      //   // const panelClass = document.createAttribute('class');
+      //   // attribute.value = 'panel'
+
+      // }
+    </script>
+    <style>
+      body {
+        /* position: relative; */
+        margin: 0;
+        background: url("./img/lavender.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      .panels {
+        display: flex;
+        width: 100%;
+      }
+
+      .panels-above {
+        z-index: 10;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        /* position: absolute; */
+        /* top: 0; */
+      }
+
+      .panel {
+        width: 100%;
+        height: 100vh;
+      }
+
+      .panel-above {
+        height: 100%;
+        width: 100vw;
+      }
+
+      .blurry {
+        backdrop-filter: blur(5px);
+      }
+
+      .blurrier {
+        backdrop-filter: blur(10px);
+      }
+
+      .blurriest {
+        backdrop-filter: blur(20px);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="panels" class="panels">
+      <div class="panel blurriest"></div>
+      <div class="panel blurrier"></div>
+      <div class="panel"></div>
+      <div class="panel blurry"></div>
+    </div>
+    <!-- <div id="panels-above" class="panels panels-above">
+      <div class="panel-above blurrier"></div>
+      <div class="panel-above blurry"></div>
+      <div class="panel-above"></div>
+      <div class="panel-above blurriest"></div>
+    </div> -->
+  </body>
+</html>
